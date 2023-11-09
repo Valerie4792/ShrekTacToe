@@ -1,0 +1,79 @@
+.square{
+  margin-left: 5px;
+  background: #ffffff43;
+  border: 1px solid #999999a1;
+  
+  font-size: 24px;
+  font-weight: bold;
+  line-height: 180px;
+  height: 180px;
+  
+  padding: 0;
+  text-align: center;
+  width: 180px;
+
+  
+}
+.shrek{
+  height: 180px;
+  width:180px;
+}
+.donkey{
+  height: 180px;
+  width: 180px;
+}
+body{
+  background-image: url('./Images/shrekswamp.jpeg');
+  background-size: cover;
+  display: flex;
+  justify-content: center;
+  
+}
+h1{
+  font-family: fantasy;
+color: White;
+font-size: 40px;
+  font-weight: 700;
+  display: flex;
+  justify-content: center;
+}
+.status{
+  font-family: fantasy;
+  color: rgb(255, 255, 255);
+  font-size: 25px;
+    font-weight: 600;
+    display: flex;
+    justify-content: center;
+
+}
+
+.playAgain{
+  color: white;
+  background-color: green;
+  border-radius: 5px;
+  margin: 5px;
+  padding: 10px;
+  font-family: fantasy;
+  font-size: 20px;
+}
+
+.audio-controls {
+  display: flex;
+  align-items: center;
+  margin-top: 20px;
+}
+
+.playbutton {
+  background-color: #04AA6D;
+  color: white;
+ border-radius: 5px;
+
+  padding: 10px 20px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.playbutton:hover {
+  background-color: #04755d;
+}
+
