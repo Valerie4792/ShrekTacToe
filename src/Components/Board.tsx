@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Square from "./Square";
-import allStar from '../assets/Sound/allstar.mp3'
+import allStar from "../assets/Sound/allstar.mp3";
 
 function Board() {
   const [xIsNext, setXIsNext] = useState(true);
@@ -70,7 +70,7 @@ function Board() {
   useEffect(() => {
     const audio = document.getElementById("audioElement") as HTMLAudioElement;
     const playButton = document.getElementById("playButton");
-  
+
     if (audio && playButton) {
       playButton.addEventListener("click", () => {
         if (audio.paused) {
@@ -80,29 +80,30 @@ function Board() {
         }
       });
     }
-  
+
     // ... rest of the useEffect ...
   }, [volume]);
-  
 
   return (
     <>
       <div className="bg">
-    <button id="playButton" className="playbutton">Play</button>
-      <audio id="audioElement" autoPlay loop src={allStar}></audio>
+        <button id="playButton" className="playbutton">
+          Play
+        </button>
+        <audio id="audioElement" autoPlay loop src={allStar}></audio>
 
-      <div className="audio-controls">
-        <input
-          type="range"
-          min="1"
-          max="100"
-          value={volume} // Bind the value of the slider to the volume state
-          className="slider"
-          id="myRange"
-          onChange={(e) => setVolume(Number(e.target.value))}
-        />
-        <p className="volume">Volume: {volume}</p>
-      </div>
+        <div className="audio-controls">
+          <input
+            type="range"
+            min="1"
+            max="100"
+            value={volume} // Bind the value of the slider to the volume state
+            className="slider"
+            id="myRange"
+            onChange={(e) => setVolume(Number(e.target.value))}
+          />
+          <p className="volume">Volume: {volume}</p>
+        </div>
 
         {/* <audio autoPlay loop controls src="/Sound/allstar.mp3"></audio> */}
         <div className="row">
@@ -122,7 +123,7 @@ function Board() {
               </button>
             ) : null}
           </div>
-
+          <div className="container-fluid">
           <div className="row">
             <div className="col">
               <Square value={squares[0]} onSquareClick={() => handleClick(0)} />
@@ -144,6 +145,9 @@ function Board() {
               <Square value={squares[8]} onSquareClick={() => handleClick(8)} />
             </div>
           </div>
+          </div>
+
+
         </div>
       </div>
     </>
