@@ -23,7 +23,7 @@
   width: 180px;
 }
 body{
-  background-image: url('./Images/shrekswamp.jpeg');
+  background-image: url('./assets/Images/shrekswamp.jpeg');
   background-size: cover;
   display: flex;
   justify-content: center;

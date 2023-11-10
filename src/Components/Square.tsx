@@ -1,7 +1,8 @@
 
 import React, { useState } from 'react'
 import Board from './Board'
-import donkey from '/Images/donkey.png'
+import donkey from '../assets/Images/donkey.png'
+import shrek from '../assets/Images/shrek.png'
 
 
 
@@ -24,7 +25,7 @@ function getImage(){
     return <img className='donkey' src={donkey} alt="Donkey" />;
   }
   else if(value ==='Shrek'){
-    return <img className='shrek' src="/Images/shrek.png" alt="Shrek" />;
+    return <img className='shrek' src={shrek} alt="Shrek" />;
   }
   else{
     return null

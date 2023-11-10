@@ -1,5 +1,6 @@
 import React, { useEffect, useState } from "react";
 import Square from "./Square";
+import allStar from '../assets/Sound/allstar.mp3'
 
 function Board() {
   const [xIsNext, setXIsNext] = useState(true);
@@ -88,7 +89,7 @@ function Board() {
     <>
       <div className="bg">
     <button id="playButton" className="playbutton">Play</button>
-      <audio id="audioElement" autoPlay loop src="/Sound/allstar.mp3"></audio>
+      <audio id="audioElement" autoPlay loop src={allStar}></audio>
 
       <div className="audio-controls">
         <input
