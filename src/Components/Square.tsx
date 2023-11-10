@@ -1,6 +1,7 @@
 
 import React, { useState } from 'react'
 import Board from './Board'
+import donkey from '/Images/donkey.png'
 
 
 
@@ -20,7 +21,7 @@ const Square = ({value, onSquareClick}: SquareProps) => {
 
 function getImage(){
   if(value === 'Donkey'){
-    return <img className='donkey' src="/Images/donkey.png" alt="Donkey" />;
+    return <img className='donkey' src={donkey} alt="Donkey" />;
   }
   else if(value ==='Shrek'){
     return <img className='shrek' src="/Images/shrek.png" alt="Shrek" />;
